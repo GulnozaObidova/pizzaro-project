@@ -1,0 +1,339 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIZZARO - Pizza Delivery & Takeaway</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Top Bar -->
+  <div class="header-top">
+    <div class="container">
+      <div class="header-top-content">
+        <div class="contact-info">
+          <span><i class="fas fa-phone"></i> +998 (91) 410 21 13</span>
+          <span><i class="fas fa-envelope"></i> info@pizzaro.com</span>
+        </div>
+        <div class="user-actions">
+          <a href="#"><i class="fas fa-user"></i> Login</a>
+          <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <div class="header-logo">
+          <img src="https://cdn.freebiesupply.com/logos/large/2x/pizza-pizza-logo-png-transparent.png" alt="Pizzaro Logo"> 
+        </div>
+        
+        <ul class="nav">
+          <li class="order-online">ORDER ONLINE</li>
+          <li class="pages">
+            <!-- PAGES -->
+            <div class="mega-menu">
+              <div class="mega-column">
+                <h4 class="pages">Home Pages</h4>
+                <ul class="list1">
+                  <li>Home v1</li>
+                  <li>Home v2</li>
+                  <li>Home v3</li>
+                  <li>Home v4</li>
+                  <li>Home v5</li>
+                  <li>Home v6</li>
+                  <li>Home v7</li>
+                </ul>
+                <h4>User Account</h4>
+                <ul>
+                  <li>My Account</li>
+                  <li>Track Order</li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <h4>Shop Pages</h4>
+                <ul>
+                  <li>Shop Grid 3 Column</li>
+                  <li>Shop Grid 4 Column</li>
+                  <li>Shop Grid 6 Column</li>
+                  <li>Shop Listing</li>
+                  <li>Shop List 2 Column</li>
+                  <li>Shop List No Images</li>
+                  <li>Shop List No Image Parallax</li>
+                  <li>Shop Sidebar Grid 3 Column</li>
+                  <li>Shop Sidebar Listing</li>
+                  <li>Shop Sidebar List 2 Column</li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <h4>Shop Pages-Dark</h4>
+                <ul>
+                  <li>Shop Dark Grid 3 Column</li>
+                  <li>Shop Dark List</li>
+                  <li>Shop Dark List 2 Column</li>
+                  <li>Shop Dark List No Images</li>
+                </ul>
+                <h4>Blog Pages</h4>
+                <ul>
+                  <li>Blog</li>
+                  <li>Blog Fullwidth</li>
+                  <li>Blog Fullwidth Grid</li>
+                  <li>Blog Grid</li>
+                </ul>
+              </div>
+              <div class="mega-column">
+                <h4>Single Product Style</h4>
+                <ul>
+                  <li>Single Product v1</li>
+                  <li>Single Product v2</li>
+                  <li>Single Product v3</li>
+                </ul>
+                <h4>Theme Pages</h4>
+                <ul>
+                  <li>About Us</li>
+                  <li>Contact</li>
+                  <li>Terms & Conditions</li>
+                  <li>FAQ v1</li>
+                  <li>FAQ v2</li>
+                  <li>404</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="news">NEWS</li>
+          <li class="store-locator">STORE LOCATOR</li>
+        </ul>
+
+        <div class="header-contact">
+          <p class="delivery-info">
+            Call and Order in 
+            <span class="city-dropdown">
+              <span class="city-name">London</span>
+              <ul class="city-list">
+                <li>Paris</li>
+                <li>New York</li>
+              </ul>
+            </span>
+          </p>
+          <p class="phone-number">54 548 779 654</p> 
+        </div>
+
+        <div class="order-button-wrap">
+  <button class="cart-count">
+    <i class="fas fa-motorcycle"></i>
+    <span class="cart-text">Your Cart is Empty</span>
+  </button>
+  <div class="tooltip" id="cart-count">0 items - £0.00</div>
+</div>
+
+      </div>
+    </div>
+
+<ul class="menu-tabs">
+  <li><a href="pizza.html">🍕 Pizza</a></li>
+  <li><a href="burgers.html">🍔 Burgers</a></li>
+  <li><a href="salads.html">🥗 Salads</a></li>
+  <li><a href="tacos.html">🌮 Tacos</a></li>
+  <li><a href="wraps.html">🌯 Wraps</a></li>
+  <li><a href="fries.html">🍟 Fries</a></li>
+  <li><a href="drinks.html">🥤 Drinks</a></li>
+</ul>
+
+<!-- Place a container where menu items will appear -->
+<div id="menu-container" class="menu-items-container"></div>
+
+  </header>
+
+  <!-- Image Carousel -->
+  <div class="carousel-container">
+    <div class="carousel-slides">
+      <div class="carousel-slide active">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Delicious Pizza">
+        <div class="carousel-caption">
+          <h2>Authentic Italian Pizza</h2>
+          <p>Made with fresh ingredients and traditional recipes</p>
+          <a href="#" class="purchase-btn">Order Now</a>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1981&q=80" alt="Gourmet Pizza">
+        <div class="carousel-caption">
+          <h2>Gourmet Specialties</h2>
+          <p>Try our chef's special recipes</p>
+          <a href="#" class="purchase-btn">Order Now</a>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1565299585323-38174c738481?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Fresh Ingredients">
+        <div class="carousel-caption">
+          <h2>Fresh Ingredients</h2>
+          <p>We use only the freshest ingredients</p>
+          <a href="#" class="purchase-btn">Order Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-dots">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+    </div>
+    <button class="carousel-prev">&#10094;</button>
+    <button class="carousel-next">&#10095;</button>
+  </div>
+
+  <div class="grid-layout">
+  <div class="img-box big"><img src="img/349e88a8-fff9-42a3-b239-6513a0d5b415.png" alt=""></div>
+  <div class="img-box small"><img src="img/delicious-fries-studio_23-2151846529.avif" alt=""></div>
+  <div class="img-box small"><img src="img/8e1b7d1b-0410-421e-ad56-8d5f7213d048.png" alt=""></div>
+  <div class="img-box wide"><img src="img/fish-burger.jpg" alt=""></div>
+</div>
+
+  <!-- Tabs for filtering -->
+   <section>
+  <ul class="menu-tabs">
+    <li class="menu-choices active" data-type="all">All</li>
+    <li class="menu-choices" data-type="Wraps">Wraps</li>
+    <li class="menu-choices" data-type="Pizza sets">Pizza Sets</li>
+    <li class="menu-choices" data-type="Burgers">Burgers</li>
+  </ul>
+
+  <!-- appearnace of food -->
+  <div class="food-container" id="foodContainer"></div>
+</section>
+
+
+<div class="delivery-img">
+<img src="img/ChatGPT Image 25 авг. 2025 г., 12_32_43.png" alt="">
+  <div class="delivery-img-paragraph">
+    <h1 class="delivery-img-title">FREE DELIVERY WITH--</h1>
+    <br>
+    <h1 class="devlier-img-sub-title">Pizza of the day</h1>
+    <div class="price">
+      <span class="currency">£</span>
+      <span class="big-digit">9</span>
+      <span class="small-digits">99</span>
+    </div>
+  </div>
+</div> 
+<!-- suggestion -->
+<div id="pizza-sets" class="suggestion">
+  <h1 class="pizza-suggestions">Goes Great With</h1>
+    
+<div class="pizza-inner">
+      <!-- 1st one -->
+  
+    <div class="suggested-pizza-sets">
+      <div class="img-wrapper">
+        <img src="img/Pepperoni-pizza.png" alt="pepperoni pizza">
+        <button class="add-btn">Add to Cart ✔</button>
+      </div>
+      <h1 class="suggestion-title">Pepperoni pizza</h1>
+      <p class="suggestion-sub-title">Extra-virgin olive oil, garlic, mozzarella cheese, onions</p>
+    </div>
+
+    <!-- 2nd one -->
+    <div class="suggested-pizza-sets">
+      <div class="img-wrapper">
+        <img src="img/Trio cheese.png" alt="Trio cheese">
+        <button class="add-btn">Add to Cart ✔</button>
+      </div>
+      <h1 class="suggestion-title">Trio Cheese</h1>
+      <p class="suggestion-sub-title">Mouth watering pepperoni, cabanosi, mushroom</p>
+    </div>
+
+    <!-- 3rd one -->
+    <div class="suggested-pizza-sets">
+      <div class="img-wrapper">
+        <img src="img/Apricot-chicken.png" alt="Apricot chicken">
+        <button class="add-btn">Add to Cart ✔</button>
+      </div>
+      <h1 class="suggestion-title">Apricot Chicken</h1>
+      <p class="suggestion-sub-title">Crispy bacon, tasty ham, pineapple, onion</p>
+    </div>
+
+    <!-- 4th one -->
+    <div class="suggested-pizza-sets">
+      <div class="img-wrapper">
+        <img src="img/Italiano original.png" alt="Italiano original">
+        <button class="add-btn">Add to Cart ✔</button>
+      </div>
+      <h1 class="suggestion-title">Italiano original</h1>
+      <p class="suggestion-sub-title">Ricotta, sun dried tomatoes, garlic, mozzarella pizza</p>
+    </div>
+
+</div>
+  </div>
+</div>
+  <div class="pepperoni-container">
+  <div class="pepperoni-text">
+    <h2>Pepperoni Pizza</h2>
+    <p>
+      Extra-virgin olive oil, garlic, mozzarella cheese, onions, mushrooms, 
+      green olives, black olives, fresh tomatoes.
+    </p>
+    <button id="add-to-cart">Add to Cart ✔</button>
+    <button id="view-cart">View the Cart ✔</button>
+  </div>
+
+  <div class="pepperoni-image">
+    <img src="img/ChatGPT Image 25 авг. 2025 г., 12_41_47.png" alt="Pepperoni Pizza" class="pepperoni-img">
+  </div>
+</div>
+
+<!--offerings-->
+<div class="offerings">
+  <div class="offering">
+<img src="img/empty-shopping-basket-outline-flat-icon-isolated-white-background-eps-file-available-empty-shopping-basket-outline-flat-icon-123523567.webp" alt="">
+    <h1 class="offerings-title">Best Quality</h1>
+    <p class="offerings-sub-title">Praesent pulvinar neque pellentesque mattis pretium.</p>
+  </div>
+
+  <div class="offering">
+   <img src="img/coloring-black-white-alarm-clock-vector-illustration_705966-866.avif" alt="">
+    <h1 class="offerings-title">On Time</h1>
+    <p class="offerings-sub-title">Praesent pulvinar neque pellentesque mattis pretium.</p>
+  </div>
+
+  <div class="offering">
+<img src="img/master-chef hat.svg" alt="">
+    <h1 class="offerings-title">MasterChefs</h1>
+    <p class="offerings-sub-title">Praesent pulvinar neque pellentesque mattis pretium.</p>
+  </div>
+
+  <div class="offering">
+  <img src="img/icons8-cloche-96 (1).png" alt="">
+    <h1 class="offerings-title">Taste Food</h1>
+    <p class="offerings-sub-title">Praesent pulvinar neque pellentesque mattis pretium.</p>
+  </div>
+</div>
+
+<h1 class="Warning">Warning: Fill correct instagram infomation to show new food.</h1>
+<!-- footer-section -->
+<div class="footer-section">
+<div class="social-icons">
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="htttps://twiter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="https://www.com" target="_blank"><i class="fa-solid fa-globe"></i></a>
+</div>
+<h1 class="logo-text">Pizzaro</h1>
+ <p class="footer-text">
+    Pizzaro Restaurant <span class="separator">|</span> 
+    901-947 South Drive, Houston, TX 77057, USA <span class="separator">|</span> 
+    Telephone: +1 555 1234 <span class="separator">|</span> 
+    Fax: +1 555 4444
+  </p>
+  <p class="footer-sub-text">Copyright © 2017 Pizzaro Theme. All rights reserved.</p>
+  <br>
+  <button class="finding-location">📍 Find us on Map</button>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
